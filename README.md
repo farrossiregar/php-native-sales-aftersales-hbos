@@ -1,7 +1,7 @@
 *Note : The project on this repository is for Documentation & Portofolio only for a recruiter to check my last work. 
-It's not to leak any Source code online because the Code itself not update since i resign from this company and the it's not contain full script.
+It's not to leak any Source code online because the Code itself not update since i resign from this company and only partial of script is push to this repo.
 
-=================================================================================================================================================================================================================
+=================================================================================================================
 
 
 
