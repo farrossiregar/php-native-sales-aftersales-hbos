@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parent linear layout with vertical orientation -->
+<bulk_sending> 
+	<username>hondabintaro</username> 
+	<password>e2f1ecf8674a115802c3231c0d1aec9c</password> 
+	<priority>normal</priority> 
+	<sender>HONDABNTARO</sender> 
+	<dr_url></dr_url> 
+	<allowduplicate></allowduplicate> 
+	<data_packet>
+		<packet> 
+			<msisdn>6282126622753</msisdn> 
+			<sms>test chuy</sms> 
+			<is_long_sms>N</is_long_sms> 
+			</packet> <packet> 
+			<msisdn></msisdn> 
+			<sms></sms> 
+			<is_long_sms></is_long_sms> 
+		</packet> 
+	</data_packet> 
+</bulk_sending>

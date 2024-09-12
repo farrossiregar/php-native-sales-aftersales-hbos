@@ -1,0 +1,10 @@
+[25-Aug-2017 13:43:14 Asia/Jakarta] PHP Notice:  Undefined index: angka in /home/hondabin/web_app/modul/testbosque/crudah.php on line 8
+[25-Aug-2017 13:43:14 Asia/Jakarta] PHP Notice:  Undefined index: angka in /home/hondabin/web_app/modul/testbosque/crudah.php on line 18
+[25-Aug-2017 13:43:22 Asia/Jakarta] PHP Notice:  Undefined index: angka in /home/hondabin/web_app/modul/testbosque/crudah.php on line 8
+[25-Aug-2017 13:43:22 Asia/Jakarta] PHP Notice:  Undefined index: angka in /home/hondabin/web_app/modul/testbosque/crudah.php on line 18
+[25-Aug-2017 13:44:38 Asia/Jakarta] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/hondabin/web_app/config/koneksi.php on line 10
+[25-Aug-2017 13:44:57 Asia/Jakarta] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/hondabin/web_app/config/koneksi.php on line 10
+[25-Aug-2017 13:59:00 Asia/Jakarta] PHP Notice:  Undefined index: jumlah in /home/hondabin/web_app/modul/testbosque/crudah.php on line 13
+[25-Aug-2017 14:03:42 Asia/Jakarta] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/hondabin/web_app/config/koneksi.php on line 10
+[25-Aug-2017 15:30:29 Asia/Jakarta] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/hondabin/web_app/config/koneksi.php on line 10
+[25-Aug-2017 15:45:04 Asia/Jakarta] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/hondabin/web_app/config/koneksi.php on line 10

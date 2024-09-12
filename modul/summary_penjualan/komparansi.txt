@@ -1,0 +1,46 @@
+<tbody>
+	<?php 
+	
+		$query_sales = mysql_query("SELECT * FROM target_sales where substr(bulan,1,2) in($tes_bulan) and substr(bulan,4,4) = '$_GET[tahun1]'  and kode_spv = '$kode_spvtarget' group by kode_sales order by grade desc");
+			while ($sales = mysql_fetch_array($query_sales))
+			{
+			   $nama_sales = trim($sales['nama_sales']);
+			   $kode_sales = trim($sales['kode_sales']);
+			   $
+	?>
+		<?php
+			$faktur_sales_bulan = mysql_query("select *, count(kode_sales) as kode from summary_faktur where kode_spv = '$kode_spvtarget' and substr(tanggal, 9, 2) >= '$_GET[tggl1]' and substr(tanggal, 9, 2) <= '$_GET[tggl2]' and bulan = '$sales_bulan2[bulan]' group by kode_sales");
+		//	$faktur_sales_bulan = mysql_query("select *, count(kode_sales) as kode from summary_faktur where substr(tanggal, 9, 2) >= '$_GET[tggl1]' and substr(tanggal, 9, 2) <= '$_GET[tggl2]' and bulan = '$sales_bulan2[bulan]' group by bulan, kode_sales");
+			while($hasil_faktur_sales = mysql_fetch_array($faktur_sales_bulan)){
+		?>
+	<tr>
+		<td style="text-align:left;"><?php echo $hasil_faktur_sales['kode_sales']; ?></td>
+		<td style="font-size:17px;">
+			<b><?php echo $hasil_faktur_sales['kode'] ?></b>
+		</td>
+																		
+	</tr>
+	
+	<?php
+			}
+		}
+	?>
+	
+	<tr>
+		<td ><b style=color:#007aff>TOTAL</b></td>
+		<?php
+			$query1 = mysql_query("select *, count(kode_sales) as kode from summary_faktur where substr(tanggal, 9, 2) >= '$_GET[tggl1]' and substr(tanggal, 9, 2) <= '$_GET[tggl2]' and bulan = '$sales_bulan2[bulan]' and kode_spv = '$kode_spvtarget' group by kode_spv");
+
+			while($total = mysql_fetch_array($query1)){
+		?>
+				
+		<td style="font-size:17px;">
+			<?php echo "<b>".$total[kode]."</b>"; ?>
+		</td>
+		
+		<?php
+			}
+		?>
+			
+	</tr>
+</tbody>
